@@ -1,0 +1,209 @@
+html {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-header .card-div {
+    position: relative;
+    /* Relative Positionierung für das Karten-Div */
+    width: 200px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    display: block;
+    float: left;
+}
+
+.card-header .card-div .header-div {
+    position: absolute;
+    /* Absolute Positionierung für das Kopfzeilen-Div */
+    top: 50%;
+    /* Zentriert vertikal */
+    left: 50%;
+    /* Zentriert horizontal */
+    transform: translate(-50%, -50%);
+    /* Zentriert das Element */
+    text-align: center;
+    font-size: 30px;
+    opacity: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-header .card-div .image-div {
+    position: absolute;
+    /* Absolute Positionierung für das Bild-Div */
+    top: 30%;
+    /* Zentriert vertikal */
+    left: 50%;
+    /* Zentriert horizontal */
+    transform: translate(-50%, -50%);
+    /* Zentriert das Element */
+    width: 60%;
+    border-radius: 7px;
+}
+
+.card-header .card-div:hover .header-div {
+    top: 65%;
+    animation: visible 0.25s linear 0s forwards alternate;
+}
+
+.card-header .card-div .card-link {
+    color: white;
+}
+
+.card-header .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card-div {
+        width: 200px;
+    }
+}
+
+html {
+    background-image: url("https://imgs.search.brave.com/vGYVxOVqDgZM9RUL8qHO4rrjC4UqH-46mW1xoyyfCJk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wdWIt/c3RhdGljLmZvdG9y/LmNvbS9hc3NldHMv/YmcvYWI2ZmY0NzQt/YmIyOC00YzYwLTg3/YzEtMjAxZTM5NDc0/NDEzLnBuZw");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head {
+    width: auto;
+    height: 50px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.p-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about {
+    outline: 3px white solid;
+    width: 1000px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.youtube_videos {
+    outline: 3px white solid;
+    width: 1000px;
+    margin: 25px auto auto auto ;
+    
+    border-radius: 25px;
+    padding-top: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.images {
+    border-radius: 5%;
+    margin-left: 7.5px;
+    margin-bottom: 30px;
+
+}
+
+.images:hover {
+    cursor: pointer;
+    animation: simpleAnimation 0.5s forwards;
+}
+
+.images:not(:hover) {
+    animation: simpleAnimationbackwards 0.5s forwards;
+}
+
+@keyframes simpleAnimation {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes simpleAnimationbackwards {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.head {
+    animation: simpleAnimation 2s infinite;
+}
+
+.no {
+    z-index: 1;
+
+}
+
+.ntw {
+    z-index: 2;
+}
+
+.nth {
+    z-index: 1;
+}
+
+.register {
+    border: 3px solid white;
+    width: 1000px;
+    margin: 20px auto auto auto;
+    border-radius: 20px;
+}
+
+.register .tell {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 20px;
+}
+
+input[type=search] {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid black;
+    width: 100%;
+}

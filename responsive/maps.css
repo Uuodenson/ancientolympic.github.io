@@ -1,0 +1,127 @@
+.maps {
+    margin-bottom: 2.5em;
+    ;
+}
+
+.map-button-mini-game {
+    background-color: #cdf462;
+    width: fit-content;
+    padding: 2px 1em 2px 1em;
+    margin-top: 1em;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.map-button-olympic-story-game {
+    background-color: violet;
+    width: fit-content;
+    padding: 2px 1em 2px 1em;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.map-image {
+    width: 50%;
+    border-radius: 0.5em;
+}
+
+.map-about {
+    margin-top: -0.5em;
+}
+
+.map-about .map-title {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.map-about .map-description {
+    font-weight: 600;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    width: 50%;
+}
+
+
+.maps:hover .animation {
+    animation: on-image-hover 0.3s forwards;
+}
+
+.maps:hover {
+    cursor: pointer;
+}
+
+.maps:not(hover) .animation {
+    animation: not-on-image-hover 0.3s forwards;
+}
+
+.maps:hover .link-up {
+    animation: visible 0.5s forwards;
+}
+
+.maps:not(hover) .link-up {
+    animation: not-visible 0.5s forwards;
+}
+
+@keyframes on-image-hover {
+    100% {
+        transform: rotateZ(-2.5deg) translateY(-0.5em);
+        opacity: 0.6;
+    }
+}
+
+@keyframes not-on-image-hover {
+    0% {
+        transform: rotateZ(-2.5deg) translateY(-0.5em)
+    }
+
+    100% {
+        transform: rotateZ(0deg) translateY(0em)
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes not-visible {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.link-up {
+    opacity: 0;
+    position: relative;
+    font-size: small;
+    margin: 0 auto;
+    color: black;
+    font-weight: bold;
+    width: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link-up .right-arrow {
+    width: 1.5em;
+    transform: translateY(0.3em);
+}

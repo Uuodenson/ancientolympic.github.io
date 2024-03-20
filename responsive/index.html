@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="shortcut icon" href="../discord.svg" type="image/x-icon">
+</head>
+<style>
+    .header {
+        background-color: #333;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: space-around;
+        background-color: #333;
+        width: 100%;
+        /* Ensures the flex container covers the whole width */
+    }
+
+    .logo {
+        user-select: none;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .image-size {
+        width: 50px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <img class="logo image-size" src="../Medafire.svg" alt="Discord" class="logo">
+        <div class="flex-box">
+            <div class="box"><img class="image-size" src="../discord.svg" alt="Discord" oncontextmenu="return false;">
+            </div>
+            <div class="box"><img class="image-size" src="../twitter.svg" alt="Discord" oncontextmenu="return false;">
+            </div>
+            <div class="box"><img class="image-size" src="../youtube-logo.svg" alt="Discord"
+                    oncontextmenu="return false;"></div>
+            <div class="box"><img class="image-size" src="../Medafire.svg" alt="Discord" oncontextmenu="return false;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

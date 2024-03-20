@@ -1,0 +1,94 @@
+html {
+    --background-color: #2B2A33;
+    --text-color: #fbfbfe;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Readex Pro', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+p{
+    text-align: center;
+}
+
+.map_title {
+    text-align: center;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.map_info{
+    border: 3.75px solid white;
+    border-radius: 1px;
+}
+
+.map_image{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2px;
+}
+
+.colorized{
+    color: lime;
+}
+
+
+.mediafire_button .image{
+    height: 20px;
+}
+
+.mediafire_button{
+    background-color: transparent;
+    border-radius: 2px;
+    border: none;
+    background-color: white;
+}
+
+.mediafire_button:hover .image{
+    filter: invert(100%);
+}
+
+.button_links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mcpedl_button {
+    background-color: green;
+    border-radius: 1em;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    font-size: 12px;
+    font-family: 'Readex Pro', sans-serif;
+    cursor: pointer;
+}
+
+.mcpedl_button .image {
+    width: 50px;
+}  
+
+.grid-right {
+    grid-column: 3/3;
+}
+
+.map_description{
+    text-align: center;
+    font-size: 25px;
+}

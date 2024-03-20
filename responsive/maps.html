@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+
+<style>
+    .maps {
+        margin-bottom: 2.5em;
+        ;
+    }
+
+    .map-button-mini-game {
+        background-color: #cdf462;
+        width: fit-content;
+        padding: 2px 1em 2px 1em;
+        margin-top: 1em;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .map-button-olympic-story-game {
+        background-color: violet;
+        width: fit-content;
+        padding: 2px 1em 2px 1em;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .map-image {
+        width: 50%;
+        border-radius: 0.5em;
+    }
+
+    .map-about {
+        margin-top: -0.5em;
+    }
+
+    .map-about .map-title {
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .map-about .map-description {
+        font-weight: 600;
+        width: 60%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .title {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        width: 50%;
+    }
+
+
+    .maps:hover .animation {
+        animation: on-image-hover 0.3s forwards;
+    }
+
+    .maps:hover {
+        cursor: pointer;
+    }
+
+    .maps:not(hover) .animation {
+        animation: not-on-image-hover 0.3s forwards;
+    }
+
+    .maps:hover .link-up {
+        animation: visible 0.5s forwards;
+    }
+
+    .maps:not(hover) .link-up {
+        animation: not-visible 0.5s forwards;
+    }
+
+    @keyframes on-image-hover {
+        100% {
+            transform: rotateZ(-2.5deg) translateY(-0.5em);
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes not-on-image-hover {
+        0% {
+            transform: rotateZ(-2.5deg) translateY(-0.5em)
+        }
+
+        100% {
+            transform: rotateZ(0deg) translateY(0em)
+        }
+    }
+
+    @keyframes visible {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes not-visible {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .link-up {
+        opacity: 0;
+        position: relative;
+        font-size: small;
+        margin: 0 auto;
+        color: black;
+        font-weight: bold;
+        width: 70%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .link-up .right-arrow {
+        width: 1.5em;
+        transform: translateY(0.3em);
+    }
+</style>
+
+<body>
+    <h1 class="title">We are proud of our creations</h1>
+    <div class="maps">
+        <div class="map-one">
+            <div class="animation">
+                <img class="map-image"
+                    src="https://www.shapescape.com/static/ec030849148c7637e8a4c4ab9fb83e28/8ab23/bdc5ff95-e0b8-4d0e-b426-6e72e1d3a029_keyart.webp"
+                    alt="map-one">
+                <p class=" link-up">Learn more about <img class="right-arrow" src="../right-arrow.svg" alt="arrow up">
+                </p>
+
+                <div class="map-button-mini-game">
+                    Minigame
+                </div>
+            </div>
+            <div class="map-about">
+                <h2 class="map-title">Artemis: Rocket Builds</h2>
+                <p class="map-description">Blast off to the Moon with Artemis: Rocket Builds in Minecraft Education!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="maps">
+        <div class="map-one">
+            <div class="animation">
+                <img class="map-image"
+                    src="https://www.shapescape.com/static/2d5815310f37805baa343fceccd1bdcc/8ab23/fd2d77af-9d38-457a-a7fa-fdf61ba3022d_keyart.webp"
+                    alt="map-one">
+                <p class=" link-up">Learn more about <img class="right-arrow" src="../right-arrow.svg" alt="arrow up">
+                </p>
+
+                <div class="map-button-mini-game">
+                    Minigame
+                </div>
+            </div>
+            <div class="map-about">
+                <h2 class="map-title">Planet Earth III</h2>
+                <p class="map-description">Experience survival as predator and prey!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

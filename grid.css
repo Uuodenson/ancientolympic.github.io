@@ -1,0 +1,157 @@
+.top {
+    display: grid;
+    gap: 5px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 1000px;
+    margin: auto;
+}
+
+.logo {
+    grid-column: 3/3;
+
+}
+
+.logo:hover {
+    animation: hover-effect 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.logo:not(:hover) { 
+    animation: hover-effect-backwards 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+.logo .logo_image {
+    border-radius: 5em;
+
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.youtube_button {
+    grid-column: 1/2;
+    background-color: red;
+    border-radius: 1em;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    font-size: 12px;
+    font-family: 'Readex Pro', sans-serif;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    width: 50px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(122%) contrast(102%);
+}
+
+/* .youtube_button:hover .youtube-logo {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(288deg) brightness(50%) contrast(102%);
+} */
+
+.twitter_button {
+    background-color: white;
+    border-radius: 1em;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    font-size: 12px;
+    font-family: 'Readex Pro', sans-serif;
+    cursor: pointer;
+}
+
+
+.mcpedl_button {
+    grid-column: 4/4;
+    background-color: green;
+    border-radius: 1em;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    font-size: 12px;
+    font-family: 'Readex Pro', sans-serif;
+    cursor: pointer;
+}
+
+.mcpedl_image {
+    width: 50px;
+    padding-top: 2.45%;
+}
+
+.header {
+    background-color: black;
+}
+
+
+@keyframes shake-animation {
+    25% {
+        transform: translateX(0);
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: translateX(5px);
+        transform: rotateZ(90deg);
+    }
+
+    75% {
+        transform: translateX(-5px);
+        transform: rotateZ(-90deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+.discord_button {
+    margin-top: 2px;
+    height: 70px;
+    width: 149px;
+    grid-column: 5/5;
+    background-color:  rgb(69, 69, 229);
+    border-radius: 1em;
+    color: rgb(85, 85, 227);
+    border: none;
+    font-family: 'Readex Pro', sans-serif;
+    cursor: pointer;
+}
+
+.discord_image{
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.link-button:hover{
+    animation: hover-effect 0.5s forwards 0s;
+}
+
+.link-button:not(:hover){
+    animation: hover-effect-backwards 0.5s forwards 0s;
+}
+
+@keyframes hover-effect {
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hover-effect-backwards {
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
