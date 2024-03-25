@@ -1,0 +1,59 @@
+.header {
+    background-color: #333;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    background-color: #333;
+    width: 100%;
+    /* Ensures the flex container covers the whole width */
+}
+
+.logo {
+    user-select: none;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2em;
+}
+
+.image-size {
+    width: 50px;
+}
+
+.cards {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6em;
+}
+
+.box:hover {
+    animation: hover-effect 0.5s forwards;
+}
+
+.box:not(:hover) {
+    animation: not-hover-effect 0.5s forwards;
+}
+
+@keyframes hover-effect {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes not-hover-effect {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}

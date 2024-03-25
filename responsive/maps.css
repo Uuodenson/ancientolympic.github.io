@@ -4,10 +4,12 @@
 }
 
 .map-button-mini-game {
+
     background-color: #cdf462;
+    color: black;
     width: fit-content;
     padding: 2px 1em 2px 1em;
-    margin-top: 1em;
+    margin-top: -1em;
     border-radius: 100px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,13 +20,14 @@
     background-color: violet;
     width: fit-content;
     padding: 2px 1em 2px 1em;
+    margin-top: -1em;
     border-radius: 100px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .map-image {
-    width: 50%;
+    width: 100%;
     border-radius: 0.5em;
 }
 

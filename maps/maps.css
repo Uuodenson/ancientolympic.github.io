@@ -27,17 +27,25 @@ p{
 .map_title {
     text-align: center;
     font-family: 'Readex Pro', sans-serif;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .map_info{
-    border: 3.75px solid white;
+    /* border: 3.75px solid white; */
     border-radius: 1px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.map_title_info{
+    text-align: left;
+    font-size: 50px;
 }
 
 .map_image{
-    width: 50%;
+    
+    width: 90%;
     margin: 0 auto;
     display: block;
     border-radius: 2px;
@@ -63,9 +71,12 @@ p{
     filter: invert(100%);
 }
 
+
 .button_links{
+    width: 99%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto 1em;
 }
 
 .mcpedl_button {
@@ -89,6 +100,61 @@ p{
 }
 
 .map_description{
-    text-align: center;
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+
+.info{
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
     font-size: 25px;
+}
+
+.paragraph{
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 29px;
+    width: 75%;
+    margin: 2em auto 0;
+}
+
+.colorized{
+    color: white;
+    background-color: #a5cf2f;
+    border-radius: 1em;
+}
+
+.about-section{
+    text-align: left;
+    font-size: 26px;
+    font-weight: 800;
+    font-family: 'Readex Pro', sans-serif;
+    margin-bottom: -0.5em;
+}
+
+.map-images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.images{
+    margin: 0 auto 0;
+    width: 90%;
+    transform: scaleY(0.85);
+    border-radius: 2em;
+}
+
+.map_video{
+    width: 90%;
+    height: 20em;
+    margin: 1em auto;
+    display: block;
+    border-radius: 2px;
 }

@@ -8,23 +8,46 @@
         Olympic Games | Ancient Olymipc
     </title>
     <link rel="stylesheet" href="./maps.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="../responsive/maps.css">
 </head>
 
+<style>
+    .map-button-mini-game {
+        margin-top: 1em;
+    }
+</style>
+
 <body>
+    <div class="header">
+        <div class="logo-box">
+            <img class="logo image-size" src="../Medafire.svg" alt="Discord">
+        </div>
+        <div class="flex-box">
+            <div class="box"><img class="image-size" src="../discord.svg" alt="Discord" oncontextmenu="return false;">
+            </div>
+            <div class="box"><img class="image-size" src="../twitter.svg" alt="Discord" oncontextmenu="return false;">
+            </div>
+            <div class="box"><img class="image-size" src="../youtube-logo.svg" alt="Discord"
+                    oncontextmenu="return false;"></div>
+            <div class="box"><img class="image-size" src="https://mcpedl.com/_nuxt/img/logo.e39b598.png" alt="Discord"
+                    oncontextmenu="return false;">
+            </div>
+        </div>
+    </div>
+
     <h1 class="map_title">Ancient Olympic Presents</h1>
     <div class="map_info">
-        <h3>🥇 Olympic Games - Death Run Update</h3>
-        <img class="map_image"
-            src="https://api.mcpedl.com/storage/submissions/186113/images/-olympic-games--death-run-update_2.png"
-            alt="Map Image">
-        <p class="map_description">Do you want to play on a fun minigame map with 13 modes, custom sounds, costumes, and
-            Hub Titles? Come and grab your friends for the Olympic Games on the Minecraft Bedrock edition. Play the
-            different minigames, which are all special in their own way! Earn Coins by wining the whole Olympic Games.
-            Buy new costumes, voicelines and hubtitles in the custom designed shop and learn more about each minigame in
-            the new tutorial laboratory.
-        </p>
+
+        <div class="map-button-mini-game">
+            Minigame
+        </div>
+
+        <h3 class="map_title_info">🥇 Olympic Games - Death Run Update</h3>
+        <p class="info">Play against your friends in epic Olympic Games</p>
 
         <div class="button_links">
+
             <button class="mediafire_button">
                 <a href="https://www.mediafire.com/file/l5fkhwwdm9oya57/Olympic+Games.mcworld/file"><img class="image"
                         src="../Medafire.svg" alt="Mediafire-Link"></a>
@@ -36,9 +59,55 @@
                     <img class="image" src="https://mcpedl.com/_nuxt/img/logo.e39b598.png" alt="MCpedl Link">
                 </a>
             </button>
+
         </div>
+
+        <img class="map_image"
+            src="https://api.mcpedl.com/storage/submissions/186113/images/-olympic-games--death-run-update_2.png"
+            alt="Map Image">
+
+        <!-- <iframe class="map_video" width="560" height="315"
+            src="https://www.youtube.com/embed/BGzV4IHOxUs?si=n6BIVoJSUAMNqm1j" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe> -->
+
+        <p class="paragraph">
+            Come and grab your friends for the <strong class="colorized">Olympic Games</strong> on the Minecraft Bedrock
+            edition
+        </p>
+
+        <p class="about-section">About</p>
+
+        <p class="map_description">Do you want to play on a fun minigame map with 13 modes, custom sounds, costumes, and
+            Hub Titles? Come and grab your friends for the Olympic Games on the Minecraft Bedrock edition. Play the
+            different minigames, which are all special in their own way! Earn Coins by wining the whole Olympic Games.
+            Buy new costumes, voicelines and hubtitles in the custom designed shop and learn more about each minigame in
+            the new tutorial laboratory.
+        </p>
+
+        <div class="map-images">
+            <img class="images"
+                src="https://api.mcpedl.com/storage/submissions/186113/images/-olympic-games--death-run-update_2.png"
+                alt="Map Image One">
+            <img class="images"
+                src="https://api.mcpedl.com/storage/submissions/182305/images/-olympic-games--quality-update_13.png"
+                alt="Map Image One">
+        </div>
+        <div class="map-images">
+            <img class="images"
+                src="https://api.mcpedl.com/storage/submissions/182305/images/-olympic-games--quality-update_12.png"
+                alt="Map Image One">
+            <img class="images"
+                src="https://api.mcpedl.com/storage/submissions/182305/images/-olympic-games--quality-update_11.png"
+                alt="Map Image One">
+        </div>
+
+
 
     </div>
 </body>
+<script src="../responsive/headerclick.js"></script>
 
 </html>

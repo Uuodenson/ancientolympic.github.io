@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="shortcut icon" href="../discord.svg" type="image/x-icon">
+    <link rel="stylesheet" href="maps.css">
+
 </head>
 <style>
     .header {
@@ -32,11 +34,48 @@
     .image-size {
         width: 50px;
     }
+
+    .cards {
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6em;
+    }
+
+    .box:hover {
+        animation: hover-effect 0.5s forwards;
+    }
+
+    .box:not(:hover) {
+        animation: not-hover-effect 0.5s forwards;
+    }
+
+    @keyframes hover-effect {
+        0% {
+            transform: scale(1.0);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+    @keyframes not-hover-effect {
+        0% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1.0);
+        }
+    }
 </style>
 
 <body>
     <div class="header">
-        <img class="logo image-size" src="../Medafire.svg" alt="Discord" class="logo">
+        <div class="logo-box">
+            <img class="logo image-size" src="../Medafire.svg" alt="Discord" class="logo">
+        </div>
         <div class="flex-box">
             <div class="box"><img class="image-size" src="../discord.svg" alt="Discord" oncontextmenu="return false;">
             </div>
@@ -44,10 +83,85 @@
             </div>
             <div class="box"><img class="image-size" src="../youtube-logo.svg" alt="Discord"
                     oncontextmenu="return false;"></div>
-            <div class="box"><img class="image-size" src="../Medafire.svg" alt="Discord" oncontextmenu="return false;">
+            <div class="box"><img class="image-size" src="https://mcpedl.com/_nuxt/img/logo.e39b598.png" alt="Discord"
+                    oncontextmenu="return false;">
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <!-- Div 1 -->
+        <div class="maps">
+            <div class="map-one">
+                <div class="animation">
+                    <img class="map-image"
+                        src="https://api.mcpedl.com/storage/submissions/94371/100/powerpointbildschirmprsentation--thumbnail-olympic-story-legendspptx-31102022-185302_1-520x245.png"
+                        alt="map-one">
+                    <p class=" link-up">Learn more about <img class="right-arrow" src="../right-arrow.svg"
+                            alt="arrow up">
+                    </p>
+
+                    <div class="map-button-mini-game">
+                        Minigame
+                    </div>
+                </div>
+                <div class="map-about">
+                    <h2 class="map-title">🎂 Birthday Parkour Map</h2>
+                    <p class="map-description">Ancient Olympic celebrated its first birthday with a jump and run map
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Div 2 -->
+        <div class="maps">
+            <div class="map-one">
+                <div class="animation">
+                    <img class="map-image"
+                        src="https://api.mcpedl.com/storage/submissions/91490/100/powerpointbildschirmprsentation--olympic-storypptx-21082022-223816_1-520x245.png"
+                        alt="map-one">
+                    <p class=" link-up">Learn more about <img class="right-arrow" src="../right-arrow.svg"
+                            alt="arrow up">
+                    </p>
+
+                    <div class="map-button-olympic-story-game">
+                        Story
+                    </div>
+                </div>
+                <div class="map-about">
+                    <h2 class="map-title">Dawn of Atlantis</h2>
+                    <p class="map-description">Your task is to help the foreigns. An ancient force threatens the
+                        balance.
+                        The greek goddess Gaia wants to conquer atlantis
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Div 3 -->
+        <div class="maps">
+            <div class="map-one">
+                <div class="animation">
+                    <img class="map-image"
+                        src="https://api.mcpedl.com/storage/submissions/96938/103/worldicon-2_1-520x245.png"
+                        alt="map-one">
+                    <p class=" link-up">Learn more about <img class="right-arrow" src="../right-arrow.svg"
+                            alt="arrow up">
+                    </p>
+
+                    <div class="map-button-mini-game">
+                        Minigame
+                    </div>
+                </div>
+                <div class="map-about">
+                    <h2 class="map-title">🥇 Olympic Games</h2>
+                    <p class="map-description">Come and grab your friends for the Olympic Games on the Minecraft Bedrock
+                        edition. A fun minigame map with 13 modes.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
+<script src="onclick.js"></script>
+<script src="headerclick.js"></script>
 
 </html>
